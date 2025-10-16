@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 230vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 10px 105px 3px #cccccc;
+    border-radius: 20px;
+}
+
+form h2 {
+    text-transform: uppercase;
+    color: rgb(41, 44, 56);
+    padding: 20px;
+}
+
+form input[type="mail"],
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: 0;
+border: 1px solid gray;
+transition: all 0.3s ease-in-out;
+border-radius: 5px;
+}
+    textarea {
+        resize: none;
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        outline: 0;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 200px;
+        transition: all 0.3s ease-in-out;
+}
+
+form input[type="mensaje"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: 0;
+    border: 0;
+    background-color: #222;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form input[type="mensaje"]:hover {
+    opacity: 0.75;
+}
+
+form input[type="mail"]:focus {
+    border: 1px solid royalblue;
+}
+input[type="text"]:focus {
+    border: 1px solid royalblue;
+}
+
+textarea:focus {
+    border: 1px solid royalblue;
+}
